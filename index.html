@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>나 잡아봐라~</title>
+
+	<style type="text/css">
+
+	body{width: 1400px; background-image:url('policeline.gif'); background-size:auto;}
+	p{width: 1400px; line-height: 1.8; text-align: center; color: #ffffff; font-size: 40px;}
+
+
+	
+    .second{width: 1400px; height: 700px; margin-top: 10px;  margin-left: 45px; margin-bottom: 10px; position: absolute; }
+
+
+
+	#hhh{position: absolute; margin-left: 500px; margin-top: 40px;}
+	    }
+	#bc{margin-left: 100px; position: absolute;}
+	#pc{margin-left: 100px; position: absolute;}
+	#th{margin-left: 250px; position: absolute;}
+	#th2{margin-left: 700px; position: absolute;}
+	#tr{margin-left: 450px; position: absolute; margin-top: 450px; animation: g 0.4 alternate infinite;}
+	    @keyframes tr{
+	    	from{opacity: 1;}
+	    	to{opacity: 0;}
+	    }
+	#pol{width: 300px; margin-left: : 700px; position: absolute; margin-top: 340px;}
+	#pod{margin-top: 400px; position: absolute; width: 500px; }
+    #policea{width: 300px; margin-left: : 900px; position: absolute; margin-top: 250px; padding-left: 800px; padding-top: -300px;}
+    #policeb{width: 300px; margin-left: : 1400px; position: absolute; margin-top: 340px; padding-left: 900px; padding-top: 50px;}
+    #pc{width: 300px; margin-left: 300px; position: absolute; margin-top: 100px;}
+    
+
+
+
+	footer{width: 1400px; margin-top: 10px; margin: auto;}
+	footer p{text-align: right; line-height: 1.8; font-size: 20px; margin-left: 40px; margin-top: 125px;}
+		
+
+	</style>	
+</head>
+
+
+<body>
+	
+
+    <div class="second">
+    	<img src="thief.gif" id="th">
+        <img src="thief2.gif" id="th2">
+        <img src="treasure.gif" id="tr">
+        <img src="help.gif" id="hhh" style="opacity: 0;">
+        <img src="podol.jpg" id="pod" style="opacity: 0;">
+        <img src="police.gif" id="policea" style="opacity: 0;">
+        <img src="police2.gif" id="policeb" style="opacity: 0;">
+        <img src="policecar.png" id="pc" style="opacity: 0;">
+        
+        <audio id="lau" >
+        	<source src="laugh.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="pol">
+        	<source src="policesiren.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="hel" >
+        	<source src="helpme.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio controls="loop">
+        <source src="laugh.mp3" type="audio/mp3" />
+        <source src="Kalimba.ogg" type="audio/ogg" />
+        </audio>
+        
+    </div>
+
+    <div class="text">
+    	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p id="texta" style="opacity:0;">HELP ME!!!</p>
+		<p id="textb" style="opacity:0;">If you want to help me, press "IMAGE". </p>
+    	
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+    	tr.onclick= function(){
+    		tr.src="treasure.gif";
+
+    		hhh.style.opacity=1;
+    		th.style.opacity=0;
+    		th2.style.opacity=0;
+    		tr.style.opacity=0;
+    		texta.style.opacity=1;
+    		textb.style.opacity=1;
+    		
+
+            hel.play();
+
+            }
+        hhh.onclick= function(){
+    		hhh.src="help.gif";
+
+    		hhh.style.opacity=0;
+    		texta.style.opacity=0;
+    		textb.style.opacity=0;
+    		pod.style.opacity=1;
+    		pc.style.opacity=1;
+    		policea.style.opacity=1;
+    		policeb.style.opacity=1;
+
+
+            pol.play();
+
+            }
+
+
+        
+        </script>
+
+       
+
+    
+   
+
+<footer>
+	<p>19.09.25_@heeezzin_디지털퍼블리싱2</p>
+</footer>
+</body>
+</html>
